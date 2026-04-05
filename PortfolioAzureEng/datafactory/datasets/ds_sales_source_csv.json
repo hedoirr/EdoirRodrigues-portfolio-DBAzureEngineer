@@ -1,0 +1,26 @@
+{
+  "name": "ds_sales_source_csv",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "ls_adls",
+      "type": "LinkedServiceReference"
+    },
+    "parameters": {
+      "fileName": {
+        "type": "string"
+      }
+    },
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileSystem": "landing",
+        "folderPath": "sales",
+        "fileName": "@dataset().fileName"
+      },
+      "columnDelimiter": ",",
+      "firstRowAsHeader": true
+    },
+    "schema": []
+  }
+}

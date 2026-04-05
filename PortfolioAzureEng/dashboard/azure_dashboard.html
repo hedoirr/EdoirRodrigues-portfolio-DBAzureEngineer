@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Azure Power BI Style Dashboard</title>
+<style>
+body { font-family: Arial, sans-serif; background:#f5f7fb; margin:0; color:#1f2937; }
+.header { background:#0f172a; color:white; padding:24px 32px; }
+.container { padding:24px 32px; }
+.cards { display:grid; grid-template-columns: repeat(4, 1fr); gap:16px; margin-bottom:24px; }
+.card { background:white; border-radius:12px; padding:18px; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+.label { font-size:13px; color:#6b7280; }
+.value { font-size:30px; font-weight:700; margin-top:8px; }
+.section { margin-top:16px; display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+.panel { background:white; border-radius:12px; padding:18px; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+img { width:100%; border-radius:8px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { border-bottom:1px solid #e5e7eb; text-align:left; padding:10px 6px; }
+h2 { margin-top:0; font-size:18px; }
+ul { margin:0; padding-left:20px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Azure Activity Dashboard</h1>
+  <div>Power BI-style executive view based on QueryResult.csv</div>
+</div>
+<div class="container">
+  <div class="cards">
+    <div class="card"><div class="label">Total Events</div><div class="value">1126</div></div>
+    <div class="card"><div class="label">Success Rate</div><div class="value">69.2%</div></div>
+    <div class="card"><div class="label">Failed Events</div><div class="value">59</div></div>
+    <div class="card"><div class="label">Period</div><div class="value" style="font-size:18px">02 Apr - 04 Apr 2026</div></div>
+  </div>
+
+  <div class="section">
+    <div class="panel">
+      <h2>Activity Over Time</h2>
+      <img src="activity_over_time.png" />
+    </div>
+    <div class="panel">
+      <h2>Status Distribution</h2>
+      <img src="status_distribution.png" />
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="panel">
+      <h2>Top Operations</h2>
+      <img src="top_operations.png" />
+      <table>
+        <tr><th>Operation</th><th>Events</th></tr>
+        <tr><td>Get deployment operation status</td><td>569</td></tr><tr><td>Create Databricks Workspace</td><td>90</td></tr><tr><td>Atualizar regras de firewall de servidor SQL</td><td>52</td></tr><tr><td>Atualizar servidor SQL</td><td>45</td></tr><tr><td>Atualizar banco de dados SQL</td><td>36</td></tr><tr><td>Create Deployment</td><td>36</td></tr><tr><td>Delete server firewall rule</td><td>32</td></tr><tr><td>Put blob container</td><td>30</td></tr>
+      </table>
+    </div>
+    <div class="panel">
+      <h2>Top Resource Types</h2>
+      <table>
+        <tr><th>Resource Type</th><th>Events</th></tr>
+        <tr><td>Microsoft.Resources/deployments/operationStatuses</td><td>569</td></tr><tr><td>Microsoft.Databricks/workspaces</td><td>103</td></tr><tr><td>Microsoft.Sql/servers</td><td>77</td></tr><tr><td>Microsoft.Resources/deployments</td><td>72</td></tr><tr><td>MICROSOFT.SQL/servers</td><td>63</td></tr><tr><td>Microsoft.Sql/servers/firewallRules</td><td>42</td></tr><tr><td>Microsoft.Sql/servers/databases</td><td>31</td></tr><tr><td>Microsoft.Storage/storageAccounts/blobServices/containers</td><td>30</td></tr>
+      </table>
+      <h2 style="margin-top:24px">Executive Insights</h2>
+      <ul>
+        <li>Most activity is concentrated in deployment monitoring and Databricks workspace provisioning.</li>
+        <li>The environment shows strong foundation work, especially infra, SQL access and storage setup.</li>
+        <li>The next maturity step is end-to-end engineering: ADF orchestration, transformations and serving models.</li>
+        <li>A 69.2% success rate suggests a healthy stabilization phase, with expected failures during setup.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westeurope"
+    },
+    "environment": {
+      "value": "dev"
+    },
+    "dataFactoryName": {
+      "value": "adf-ed-portfolio-dev"
+    },
+    "databricksName": {
+      "value": "dbw-ed-portfolio-dev"
+    },
+    "storageAccountName": {
+      "value": "stedportfolio01"
+    },
+    "sqlServerName": {
+      "value": "sql-ed-portfolio-dev"
+    },
+    "sqlAdminLogin": {
+      "value": "sqladmined"
+    }
+  }
+}

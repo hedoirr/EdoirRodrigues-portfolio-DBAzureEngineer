@@ -1,0 +1,11 @@
+{
+  "name": "ls_azure_databricks",
+  "properties": {
+    "type": "AzureDatabricks",
+    "typeProperties": {
+      "domain": "https://adb-<workspace-id>.<region>.azuredatabricks.net",
+      "workspaceResourceId": "/subscriptions/<sub>/resourceGroups/<rg>/providers/Microsoft.Databricks/workspaces/<name>",
+      "existingClusterId": "<cluster-id>"
+    }
+  }
+}

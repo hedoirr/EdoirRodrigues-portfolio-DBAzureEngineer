@@ -1,0 +1,116 @@
+{
+  "name": "pl_ingest_transform_publish",
+  "properties": {
+    "description": "Ingest sales data to bronze, validate, transform in Databricks, and publish to SQL.",
+    "parameters": {
+      "load_date": {
+        "type": "string",
+        "defaultValue": "@{utcnow('yyyy-MM-dd')}"
+      }
+    },
+    "activities": [
+      {
+        "name": "CopySourceToBronze",
+        "type": "Copy",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "7.00:00:00",
+          "retry": 2,
+          "retryIntervalInSeconds": 30
+        },
+        "typeProperties": {
+          "source": {
+            "type": "DelimitedTextSource"
+          },
+          "sink": {
+            "type": "DelimitedTextSink",
+            "storeSettings": {
+              "type": "AzureBlobFSWriteSettings"
+            }
+          }
+        },
+        "inputs": [
+          {
+            "referenceName": "ds_sales_source_csv",
+            "type": "DatasetReference"
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "ds_adls_bronze_sales",
+            "type": "DatasetReference"
+          }
+        ]
+      },
+      {
+        "name": "ValidateRowCount",
+        "type": "IfCondition",
+        "dependsOn": [
+          {
+            "activity": "CopySourceToBronze",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "expression": {
+            "type": "Expression",
+            "value": "@greater(activity('CopySourceToBronze').output.rowsCopied, 0)"
+          },
+          "ifTrueActivities": [
+            {
+              "name": "RunDatabricksBronzeSilverGold",
+              "type": "DatabricksNotebook",
+              "dependsOn": [],
+              "typeProperties": {
+                "notebookPath": "/Repos/ed/azure_senior_real_project/databricks/notebooks/01_bronze_to_silver.py",
+                "baseParameters": {
+                  "load_date": "@pipeline().parameters.load_date"
+                }
+              },
+              "linkedServiceName": {
+                "referenceName": "ls_azure_databricks",
+                "type": "LinkedServiceReference"
+              }
+            },
+            {
+              "name": "StoredProcPublishSQL",
+              "type": "SqlServerStoredProcedure",
+              "dependsOn": [
+                {
+                  "activity": "RunDatabricksBronzeSilverGold",
+                  "dependencyConditions": [
+                    "Succeeded"
+                  ]
+                }
+              ],
+              "linkedServiceName": {
+                "referenceName": "ls_azure_sql",
+                "type": "LinkedServiceReference"
+              },
+              "typeProperties": {
+                "storedProcedureName": "dbo.usp_load_serving_tables"
+              }
+            }
+          ],
+          "ifFalseActivities": [
+            {
+              "name": "Fail_NoRowsCopied",
+              "type": "Fail",
+              "typeProperties": {
+                "message": "No rows copied from source.",
+                "errorCode": "NO_ROWS"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "annotations": [
+      "portfolio",
+      "senior-real",
+      "azure-data-platform"
+    ]
+  }
+}
