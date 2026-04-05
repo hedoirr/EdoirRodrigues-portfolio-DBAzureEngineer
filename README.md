@@ -83,3 +83,7 @@ Source file: `QueryResult.csv`
 
 ## Elevator pitch
 > I built a production-oriented Azure data platform from infrastructure to analytics. I focused first on deployment stability and validation, then structured the solution to evolve into full ingestion, transformation, data quality and reporting for business users.
+
+## Final Perspective
+This project goes beyond technical implementation. It represents how operational data from cloud environments can be transformed into structured, reliable and business-ready information.
+The focus is not only on moving data, but on building a scalable foundation for analytics and decision-making.
