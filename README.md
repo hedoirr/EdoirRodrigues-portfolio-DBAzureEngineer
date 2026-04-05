@@ -1,7 +1,33 @@
-# Azure Senior Real Project
+## Azure Data Platform – End-to-End Architecture
 
-End-to-end Azure Data Platform project designed to be uploaded to GitHub and used in interviews or portfolio presentations.
+This project simulates a production-ready Azure data platform, designed to handle data ingestion, transformation, and analytics in a scalable and structured way.
 
+It reflects a real-world implementation approach, focusing on deployment, data engineering best practices, and business-ready data consumption.
+
+## Architecture Overview
+
+- Azure Data Factory for ingestion and orchestration
+- Azure Data Lake Gen2 for storage (Bronze, Silver, Gold)
+- Azure Databricks for transformation using Delta Lake
+- Azure SQL for serving layer and dimensional modeling
+- Dashboard layer for business insights and monitoring
+
+## Architecture Diagram
+
+![Architecture](docs/architecture.png)
+
+## Data Source
+
+The dataset used in this project is based on real Azure activity logs, representing infrastructure operations, deployments and resource interactions.
+These logs are used to simulate a real-world data engineering scenario, where operational data is ingested, transformed and exposed for analytics.
+
+## Key Capabilities
+
+- End-to-end pipeline design
+- Incremental data processing
+- Medallion architecture (Bronze / Silver / Gold)
+- Data quality validation
+- Monitoring and deployment structure
 ## Goal
 Build a production-style Azure data platform using:
 - Azure Data Factory for ingestion and orchestration
