@@ -1,0 +1,105 @@
+{
+  "personal_info": {
+    "name": "Edoir da Silva Rodrigues",
+    "preferred_name": "Ed",
+    "location": "Barcelona, Spain",
+    "email": "contatoedoir@gmail.com",
+    "phone": "+34 603 664 412",
+    "linkedin": "https://www.linkedin.com/in/edoirrodrigues",
+    "github": "https://github.com/hedoirr",
+    "availability": "Immediate",
+    "work_model": ["Remote", "Hybrid", "Contract"]
+  },
+  "headline": "Azure Data Engineer | End-to-End Data Platform Builder | From Design to Production",
+  "value_proposition": "I don't just design data architectures — I build, deploy, debug, and make them work in real environments.",
+  "professional_summary": "Data Engineer specialized in Azure Data Platform with a strong hands-on mindset. Experienced in building end-to-end data solutions including ingestion, transformation, storage, and analytics layers. Proven ability to translate business needs into scalable data architectures. Known for going beyond theory by implementing real-world simulations and solving production-level challenges such as CI/CD failures, authentication issues, infrastructure deployment, and performance optimization.",
+  "core_strengths": [
+    "End-to-end data platform delivery",
+    "Hands-on problem solving in cloud environments",
+    "Strong debugging and troubleshooting skills",
+    "Ability to connect business needs with data solutions",
+    "Fast learner with execution-focused mindset"
+  ],
+  "technical_stack": {
+    "cloud": [
+      "Microsoft Azure",
+      "Azure Data Factory",
+      "Azure Databricks",
+      "Azure Data Lake",
+      "Azure SQL Database"
+    ],
+    "data_engineering": [
+      "ETL/ELT Pipelines",
+      "Delta Lake",
+      "Data Modeling (Star Schema)",
+      "Data Warehousing",
+      "Incremental Processing"
+    ],
+    "programming": [
+      "Python",
+      "PySpark",
+      "SQL"
+    ],
+    "devops": [
+      "GitHub Actions",
+      "CI/CD Pipelines",
+      "Infrastructure as Code (Bicep)"
+    ],
+    "visualization": [
+      "Power BI"
+    ]
+  },
+  "highlight_project": {
+    "name": "Azure Data Platform – End-to-End Deployment",
+    "impact_statement": "Designed, implemented, and deployed a complete Azure Data Platform simulating a real enterprise environment.",
+    "what_makes_it_strong": [
+      "Built full pipeline from ingestion to reporting",
+      "Implemented CI/CD with GitHub Actions",
+      "Used Infrastructure as Code (Bicep) for reproducibility",
+      "Handled real-world cloud issues (authentication, permissions, region constraints)",
+      "Designed scalable architecture with Bronze, Silver, Gold layers",
+      "Applied Delta Lake for optimized transformations"
+    ],
+    "architecture": [
+      "Azure Data Factory → Data Ingestion",
+      "Azure Data Lake → Bronze/Silver/Gold",
+      "Databricks → Data Transformation",
+      "Azure SQL → Data Warehouse",
+      "Power BI → Reporting"
+    ],
+    "github": "https://github.com/hedoirr/azure-data-platform-heavy-simulation"
+  },
+  "professional_experience": [
+    {
+      "company": "Indra (Client: Enel)",
+      "role": "Data Engineer",
+      "key_impact": [
+        "Transformed large-scale operational data into actionable insights",
+        "Automated reporting processes, reducing manual effort",
+        "Identified gaps between planned vs executed operations",
+        "Collaborated with business and tech teams to improve data-driven decisions"
+      ],
+      "technologies": [
+        "SQL Server",
+        "Power BI",
+        "Python",
+        "ETL"
+      ]
+    }
+  ],
+  "education": {
+    "program": "Master in Big Data and Artificial Intelligence",
+    "location": "Barcelona, Spain",
+    "status": "In progress"
+  },
+  "languages": [
+    { "name": "Portuguese", "level": "Native" },
+    { "name": "English", "level": "Professional" },
+    { "name": "Spanish", "level": "Professional" }
+  ],
+  "work_style": {
+    "philosophy": "Execution over theory",
+    "statement": "I validate everything by building. Once I implement it, I can explain it clearly because I understand the full process end-to-end."
+  },
+  "interview_hook": "If you want someone who not only understands Azure Data Platforms but can actually build and deliver them in real scenarios, that's exactly what I do."
+}
