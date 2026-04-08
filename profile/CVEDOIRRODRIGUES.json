@@ -1,105 +1,160 @@
 {
   "personal_info": {
-    "name": "Edoir da Silva Rodrigues",
+    "full_name": "Edoir da Silva Rodrigues",
     "preferred_name": "Ed",
     "location": "Barcelona, Spain",
+    "nationality": "Brazilian",
     "email": "contatoedoir@gmail.com",
     "phone": "+34 603 664 412",
     "linkedin": "https://www.linkedin.com/in/edoirrodrigues",
     "github": "https://github.com/hedoirr",
+    "work_authorization_status": "Based in Spain",
     "availability": "Immediate",
-    "work_model": ["Remote", "Hybrid", "Contract"]
+    "preferred_work_models": [
+      "Remote",
+      "Hybrid",
+      "Contract"
+    ]
   },
-  "headline": "Azure Data Engineer | End-to-End Data Platform Builder | From Design to Production",
-  "value_proposition": "I don't just design data architectures — I build, deploy, debug, and make them work in real environments.",
-  "professional_summary": "Data Engineer specialized in Azure Data Platform with a strong hands-on mindset. Experienced in building end-to-end data solutions including ingestion, transformation, storage, and analytics layers. Proven ability to translate business needs into scalable data architectures. Known for going beyond theory by implementing real-world simulations and solving production-level challenges such as CI/CD failures, authentication issues, infrastructure deployment, and performance optimization.",
-  "core_strengths": [
-    "End-to-end data platform delivery",
-    "Hands-on problem solving in cloud environments",
-    "Strong debugging and troubleshooting skills",
-    "Ability to connect business needs with data solutions",
-    "Fast learner with execution-focused mindset"
+  "professional_headline": "Azure Data Engineer | End-to-End Data Platform Builder | From Business Context to Technical Delivery",
+  "professional_summary": "Azure Data Engineer with a strong hands-on approach to building scalable data platforms from ingestion to analytics. Experienced in transforming operational data into structured, decision-ready datasets using Azure Data Factory, Databricks, Data Lake, Azure SQL, and Power BI. My career combines technical execution with strong communication and business understanding, developed from a non-traditional background. I validate architecture through real implementation, solving real-world cloud challenges including CI/CD, authentication, permissions, and infrastructure deployment.",
+  "career_journey": {
+    "summary": "Started in a creative and communication-driven environment before transitioning into data engineering. This background enables a strong ability to translate business needs into technical solutions and communicate complex data concepts clearly.",
+    "previous_background": "Background in performing arts and communication (Brazil), which developed presentation, storytelling, and stakeholder interaction skills.",
+    "transition": "Transitioned into data and technology, building expertise in data engineering, analytics, and cloud platforms, and later moving to Europe to further develop technical and language skills."
+  },
+  "value_proposition": [
+    "Hands-on Azure Data Engineer capable of delivering from infrastructure to analytics",
+    "Strong ability to connect business context with technical implementation",
+    "Practical mindset: build, test, debug, and validate solutions in real environments",
+    "Experience handling real deployment challenges including CI/CD, authentication, and cloud provisioning",
+    "Able to design scalable and reusable data architectures"
   ],
-  "technical_stack": {
-    "cloud": [
+  "core_competencies": {
+    "cloud_and_platform": [
       "Microsoft Azure",
       "Azure Data Factory",
       "Azure Databricks",
-      "Azure Data Lake",
-      "Azure SQL Database"
+      "Azure Data Lake Storage Gen2",
+      "Azure SQL Database",
+      "Azure DevOps",
+      "GitHub Actions",
+      "Bicep"
     ],
     "data_engineering": [
-      "ETL/ELT Pipelines",
+      "ETL / ELT",
+      "Data Integration",
+      "Incremental Loads",
       "Delta Lake",
-      "Data Modeling (Star Schema)",
       "Data Warehousing",
-      "Incremental Processing"
+      "Dimensional Modeling",
+      "Star Schema",
+      "Data Quality Validation",
+      "Data Reconciliation",
+      "Pipeline Orchestration"
     ],
-    "programming": [
+    "languages_and_processing": [
       "Python",
       "PySpark",
-      "SQL"
+      "SQL",
+      "T-SQL"
     ],
-    "devops": [
-      "GitHub Actions",
-      "CI/CD Pipelines",
-      "Infrastructure as Code (Bicep)"
+    "analytics_and_reporting": [
+      "Power BI",
+      "DAX",
+      "KPI Automation",
+      "Operational Reporting"
     ],
-    "visualization": [
-      "Power BI"
+    "soft_skills": [
+      "Communication",
+      "Stakeholder Management",
+      "Problem Solving",
+      "Adaptability",
+      "Cross-cultural Collaboration"
     ]
-  },
-  "highlight_project": {
-    "name": "Azure Data Platform – End-to-End Deployment",
-    "impact_statement": "Designed, implemented, and deployed a complete Azure Data Platform simulating a real enterprise environment.",
-    "what_makes_it_strong": [
-      "Built full pipeline from ingestion to reporting",
-      "Implemented CI/CD with GitHub Actions",
-      "Used Infrastructure as Code (Bicep) for reproducibility",
-      "Handled real-world cloud issues (authentication, permissions, region constraints)",
-      "Designed scalable architecture with Bronze, Silver, Gold layers",
-      "Applied Delta Lake for optimized transformations"
-    ],
-    "architecture": [
-      "Azure Data Factory → Data Ingestion",
-      "Azure Data Lake → Bronze/Silver/Gold",
-      "Databricks → Data Transformation",
-      "Azure SQL → Data Warehouse",
-      "Power BI → Reporting"
-    ],
-    "github": "https://github.com/hedoirr/azure-data-platform-heavy-simulation"
   },
   "professional_experience": [
     {
-      "company": "Indra (Client: Enel)",
+      "company": "Indra",
+      "client": "Enel",
       "role": "Data Engineer",
-      "key_impact": [
-        "Transformed large-scale operational data into actionable insights",
-        "Automated reporting processes, reducing manual effort",
-        "Identified gaps between planned vs executed operations",
-        "Collaborated with business and tech teams to improve data-driven decisions"
+      "location": "Brazil",
+      "employment_type": "Full-time",
+      "period": "2021 - 2024",
+      "summary": "Worked in a large-scale energy environment delivering data solutions for operational monitoring, reporting, and analytics.",
+      "responsibilities_and_impact": [
+        "Developed and maintained data pipelines for operational and business data processing",
+        "Automated KPI generation, reducing manual reporting effort and improving data reliability",
+        "Delivered daily and monthly reports supporting operational decision-making",
+        "Analyzed discrepancies between planned and executed operations to identify inefficiencies",
+        "Correlated multiple datasets to support root cause analysis and process improvements",
+        "Collaborated with business and IT teams to gather requirements and deliver data solutions",
+        "Supported continuous improvements in data processes and reporting structures"
       ],
       "technologies": [
         "SQL Server",
         "Power BI",
         "Python",
-        "ETL"
+        "ETL",
+        "Data Analysis"
+      ]
+    },
+    {
+      "company": "Freelance / Independent Projects",
+      "role": "Data Engineer (Self-driven Projects)",
+      "location": "Spain",
+      "employment_type": "Freelance",
+      "period": "2024 - Present",
+      "summary": "Developing personal and portfolio projects focused on Azure Data Engineering and cloud-based data platforms.",
+      "responsibilities_and_impact": [
+        "Designed and implemented end-to-end Azure data platform simulations",
+        "Built CI/CD pipelines using GitHub Actions and Infrastructure as Code (Bicep)",
+        "Worked with Azure services including Data Factory, Databricks, Data Lake, and SQL Database",
+        "Simulated real-world deployment issues such as authentication failures, permissions, and resource conflicts",
+        "Structured scalable architectures with Bronze, Silver, and Gold layers",
+        "Created technical documentation and storytelling for portfolio and interviews"
+      ],
+      "technologies": [
+        "Azure",
+        "Databricks",
+        "ADF",
+        "Bicep",
+        "GitHub Actions",
+        "Python",
+        "SQL"
       ]
     }
   ],
-  "education": {
-    "program": "Master in Big Data and Artificial Intelligence",
-    "location": "Barcelona, Spain",
-    "status": "In progress"
-  },
-  "languages": [
-    { "name": "Portuguese", "level": "Native" },
-    { "name": "English", "level": "Professional" },
-    { "name": "Spanish", "level": "Professional" }
+  "selected_projects": [
+    {
+      "name": "Azure Data Platform – End-to-End Heavy Simulation",
+      "summary": "Full cloud data platform built and deployed on Azure to simulate a real enterprise architecture.",
+      "highlights": [
+        "Implemented Bronze, Silver, Gold architecture",
+        "Created CI/CD pipeline with GitHub Actions",
+        "Used Bicep for infrastructure deployment",
+        "Handled real deployment errors and debugging",
+        "Designed scalable and reusable architecture"
+      ],
+      "github": "https://github.com/hedoirr/azure-data-platform-heavy-simulation"
+    }
   ],
-  "work_style": {
-    "philosophy": "Execution over theory",
-    "statement": "I validate everything by building. Once I implement it, I can explain it clearly because I understand the full process end-to-end."
+  "education": [
+    {
+      "program": "Master in Big Data and Artificial Intelligence",
+      "institution": "Barcelona, Spain",
+      "status": "In progress"
+    }
+  ],
+  "languages": [
+    { "language": "Portuguese", "level": "Native" },
+    { "language": "English", "level": "Professional" },
+    { "language": "Spanish", "level": "Professional" }
+  ],
+  "career_positioning": {
+    "strength_statement": "I learn and deliver by building. My strength is turning architecture into real, working solutions.",
+    "market_message": "Strong candidate for Azure Data Engineer roles requiring hands-on delivery and cloud problem-solving.",
+    "next_step_goal": "To work on scalable Azure data platforms in production environments across Europe."
   },
-  "interview_hook": "If you want someone who not only understands Azure Data Platforms but can actually build and deliver them in real scenarios, that's exactly what I do."
+  "interview_hook": "I don’t rely only on theory. I build the solution, make it work, and then I can explain it clearly because I’ve been hands-on through the entire process."
 }
