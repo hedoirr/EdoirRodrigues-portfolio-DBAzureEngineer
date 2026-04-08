@@ -62,7 +62,7 @@ The focus is not only on moving data, but on building a scalable foundation for 
 ## 👤 Professional Profile
 
 Structured profile (JSON):
-👉 profile/CVEDOIRRODRIGUES.json
+👉 [View CV (JSON)](./profile/CVEDOIRRODRIGUES.json)
 
 ---
 
