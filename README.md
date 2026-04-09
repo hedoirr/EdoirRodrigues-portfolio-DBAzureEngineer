@@ -46,7 +46,7 @@ Source file: `QueryResult.csv`
 ## 💡 Elevator Pitch
 
 I built a production-oriented Azure data platform from infrastructure to analytics.  
-The focus was on deployment stability, validation, and scalability — not just theory, but real implementation.
+The focus was on deployment stability, validation, and scalability. Not just theory, but real implementation.
 
 ---
 
