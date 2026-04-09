@@ -48,7 +48,7 @@ jobs:
 
       - name: Deploy Notebooks
         run: |
-          databricks workspace import_dir notebooks /Workspace/azure-project --overwrite
+          databricks workspace import_dir notebooks /Workspace/Users/contatoedoir@gmail.com/read-azure-logs --overwrite 
 
   # 🔹 3. (Opcional) Deploy ADF
   deploy-adf:
