@@ -42,8 +42,8 @@ jobs:
       - name: Configure Databricks
         run: |
           databricks configure --token <<EOF
-          ${{ https://adb-7405613042262241.1.azuredatabricks.net}}
-          ${{ dapiaa0f7f716d1f797fb566fbc5446ba016-2 }}
+          ${{ secrets.DATABRICKS_HOST }}
+          ${{ secrets.DATABRICKS_TOKEN }}
           EOF
 
       - name: Deploy Notebooks
