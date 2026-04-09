@@ -68,4 +68,4 @@ jobs:
         run: |
           az deployment group create \
             --resource-group rg-data-platform-ed \
-            --template-file datafactory/pipelines/pl_ingest_azure_logs.json 
+            --template-file datafactory/pipelines/pl_ingest_transform_publish.json
