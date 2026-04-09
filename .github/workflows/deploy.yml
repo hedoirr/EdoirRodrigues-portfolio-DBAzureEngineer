@@ -24,7 +24,7 @@ jobs:
         run: |
           az deployment group create \
             --resource-group rg-data-platform-ed \
-            --template-file infra/main.bicep
+            --template-file infrastructure/bicep/main.bicep
 
   # 🔹 2. Deploy Databricks Notebooks
   deploy-databricks:
