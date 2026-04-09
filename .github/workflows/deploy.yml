@@ -51,21 +51,21 @@ jobs:
           databricks workspace import_dir databricks/notebooks /Workspace/Shared/azure-data-platform/notebooks --overwrite 
 
   # 🔹 3. (Opcional) Deploy ADF
-  deploy-adf:
-    runs-on: ubuntu-latest
-    needs: deploy-infra
+  # deploy-adf:
+  #  runs-on: ubuntu-latest
+  #  needs: deploy-infra
 
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+   # steps:
+    #  - name: Checkout repo
+      #   uses: actions/checkout@v3
 
-      - name: Azure Login
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      # - name: Azure Login
+       #  uses: azure/login@v1
+       #  with:
+     #      creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Deploy ADF Pipeline
-        run: |
-          az deployment group create \
-            --resource-group rg-data-platform-ed \
-            --template-file datafactory/pipelines/pl_ingest_transform_publish.json
+#       - name: Deploy ADF Pipeline
+    #     run: |
+    #       az deployment group create \
+  #           --resource-group rg-data-platform-ed \
+    #         --template-file datafactory/pipelines/pl_ingest_transform_publish.json
